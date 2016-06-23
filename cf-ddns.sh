@@ -41,7 +41,7 @@ zone_name=''
 zone_id='' # If blank, will be looked up
 # DNS record name  (e.g. domain.tld or subdomain.domain.tld)
 # - can be blank if record_id is set
-record_name=''
+record_name="`hostname`.$zone_name"
 # DNS record ID - if blank, will be looked up using record_name
 record_id=''
 
